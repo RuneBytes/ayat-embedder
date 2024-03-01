@@ -1,9 +1,9 @@
-import { SafeAreaView, StyleSheet, Text } from "react-native";
-
+import { SafeAreaView, StyleSheet } from "react-native";
+import Home from "./screens/Home";
 export default function App() {
   return (
     <SafeAreaView style={styles.container}>
-      <Text style={styles.text}>Hello World!</Text>
+      <Home />
     </SafeAreaView>
   );
 }
@@ -12,9 +12,5 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: "black",
-  },
-  text: {
-    color: "white",
-    textAlign: "center",
   },
 });
