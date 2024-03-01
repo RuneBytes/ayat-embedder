@@ -1,7 +1,11 @@
 import { StyleSheet } from "react-native";
 
 const styles = StyleSheet.create({
-  upperContainer: { flex: 1, justifyContent: "center", alignItems: "center" },
+  upperContainer: {
+    flex: 1,
+    justifyContent: "center",
+    alignItems: "center",
+  },
   buttonsContainer: {
     display: "flex",
     flex: 1,
@@ -15,7 +19,7 @@ const styles = StyleSheet.create({
     borderBottomLeftRadius: 0,
   },
   text: {
-    color: "white",
+    color: "black",
     textAlign: "center",
     fontSize: 40,
   },

@@ -1,7 +1,19 @@
 import { Text, View } from "react-native";
 import { Button } from "react-native-paper";
 import styles from "./style";
-const Home = () => {
+import { useLayoutEffect } from "react";
+const Home = ({ navigation }) => {
+  useLayoutEffect(() => {
+    navigation.setOptions({
+      headerShown: false,
+    });
+  }, [navigation]);
+  const handleCreateNewProject = () => {
+    navigation.navigate("SelectVideo");
+  };
+  const handlePreviousProjects = () => {
+    navigation.navigate("PreviousProjects");
+  };
   return (
     <>
       <View style={styles.upperContainer}>
@@ -11,7 +23,7 @@ const Home = () => {
         <Button
           icon="plus"
           mode="contained"
-          onPress={() => console.log("Pressed")}
+          onPress={handleCreateNewProject}
           style={styles.button}
         >
           Create New Project
@@ -20,7 +32,7 @@ const Home = () => {
         <Button
           icon="folder"
           mode="contained"
-          onPress={() => console.log("Pressed")}
+          onPress={handlePreviousProjects}
           style={styles.button}
         >
           View Previous Projects
