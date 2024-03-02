@@ -15,7 +15,7 @@ Ayat Embedder is a mobile application developed using React Native and Expo. Thi
 ### Clone the repository:
 
 ```bash
-git clone https://github.com/s-sajib/ayat-embedder.git
+git clone https://github.com/runebytes/ayat-embedder.git
 cd ayat-embedder
 ```
 
